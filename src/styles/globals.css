@@ -1,0 +1,127 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cormorant Garamond', serif;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #f3e7d7; /* cream */
+  color: #38322a; /* choco */
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  line-height: 1.3;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+/* 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+} */
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #028e87; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f7f2eb; 
+}
+
+
+/* styles.css */
+.underline-effect {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-effect::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 0;
+  height: 0.8px;
+  background-color: theme('colors.vitamin'); /* Your vitamin color */
+  transition: all 0.3s;
+}
+
+.underline-effect:hover::after {
+  width: 100%;
+  transform-origin: left;
+}
+
+
+.underline-effect-mint {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-effect-mint::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0.8px;
+  background-color: theme('colors.mint'); /* Your vitamin color */
+  transition: all 0.3s;
+}
+
+.underline-effect-mint:hover::after {
+  width: 100%;
+  transform-origin: left;
+}
+
+
+.swiper {
+  overflow: visible !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: theme('colors.vitamin') !important; /* Ensure this color is applied */
+  font-weight: 700 !important;
+  font-size: 2rem !important; /* Override size */
+  width: 2.5rem !important; /* Override width */
+  height: 2.5rem !important; /* Override height */
+}
+
+
+/* Base Style for All Dots */
+.swiper-pagination-bullet {
+  background-color: theme('colors.vitamin') !important; /* Change dot color */
+}
+
+/* Style for Active Dot */
+.swiper-pagination-bullet-active {
+  background-color: theme('colors.vitamin') !important; /* Change active dot color */
+  transform: scale(1.3); 
+}
+
+/* Position the Pagination */
+.swiper-pagination {
+   bottom: -35px !important; 
+}

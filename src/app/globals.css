@@ -1,0 +1,9 @@
+/* src/styles/globals.css */
+@import "tailwindcss";
+
+/* (opcional) tokens v4 */
+@theme {
+  --color-choco: #38322a;
+  --color-cream: #f3e7d7;
+  --font-sans: var(--font-cormorant), ui-sans-serif, system-ui, sans-serif;
+}
